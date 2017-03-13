@@ -40,6 +40,8 @@ In your first assignment you will end up with a web page, no matter how simple, 
   ```sh
   app-app -alpha
   ```
+  
+  Answer "Yes" to the questions about GitHub and Yarn.
 
 - Open the project folder in Atom:
 
