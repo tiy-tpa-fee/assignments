@@ -40,7 +40,7 @@ In your first assignment you will end up with a web page, no matter how simple, 
   ```sh
   app-app -alpha
   ```
-  
+
   Answer "Yes" to the questions about GitHub and Yarn.
 
 - Open the project folder in Atom:
@@ -115,3 +115,8 @@ These steps will be followed for almost every assignment going forward. Once you
 - https://developer.mozilla.org/en-US/Learn/HTML/HTML_tags
 - http://atozcss.com/start-here/
 - http://www.evolutionoftheweb.com
+- [Terminal Themes](https://github.com/lysyi3m/osx-terminal-themes)
+- [FiraCode Font](https://github.com/tonsky/FiraCode)
+- [Jason's Terminal Theme - One Dark - Matches the Atom theme of the same name](https://github.com/nathanbuchar/atom-one-dark-terminal)
+- [Mac Basics](https://www.apple.com/support/macbasics/)
+- [Mouse versus Command Line](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
