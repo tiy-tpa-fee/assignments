@@ -2,7 +2,7 @@
 
 Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style Sheets).
 
-![DESIGNCO Design Mockup](https://tiy-learn-content.s3.amazonaws.com/67915a04-designco-mockup.png)
+![DESIGNCO Design Mockup](assets/mockup.png)
 
 ## Objectives
 
@@ -23,8 +23,6 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
 ### Setup
 
-- First, ensure you have the [`app-app` generator](https://github.com/tiy-tpa-fee/generator-app-app) installed. We will have done this in class.
-
 - Open your Terminal and create and change into the project's directory:
 
   ```sh
@@ -35,20 +33,10 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 - Run the generator to create a boilerplate project:
 
   ```sh
-  yo app-app alpha
+  app-app --alpha
   ```
 
-  This might take a minute to run, the generator is installing a handy development server and a tool to easily deploy our page to the web.
-
-- Let's create our `git` repository now, and start tracking changes right away:
-
-  ```sh
-  git init
-  git add .
-  git commit -m "Hello, App App"
-  ```
-
-  You can change the commit message to be anything you want.
+  Answer "Yes" to the questions about GitHub and Yarn.
 
 - Open the project folder in Atom:
 
@@ -60,14 +48,14 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 - Tab back to your Terminal and start the development server:
 
   ```sh
-  npm start
+  yarn start
   ```
 
   This should automatically happen, but if it doesn't; navigate to [http://localhost:3000](http://localhost:3000) in your browser. As you make changes to your code, the development server will automatically refresh this page in real-time.
 
-  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `npm start`.
+  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `yarn start`.
 
-- Using the file browser in your editor, open the files `public/index.html` and `public/screen.css` and mark up and style your document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
+- Using the file browser in your editor, open the file `public/index.html` and format your essay with HTML tags and place them into the document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
 
 ### Explorer Mode
 
@@ -96,22 +84,10 @@ These steps will be followed for almost every assignment going forward. Once you
 
   ```sh
   git add .
-  git commit -m "DESIGNCO"
+  git commit -m "DESIGN CO"
   ```
 
-  Feel free to replace _"DESIGNCO"_ with a more meaningful message.
-
-- In your browser, go to [GitHub](http://github.com) and create a new repository, I suggest using the title of the assignment (`design-co`) for your repository name.
-
-  ![Creating a new repository on GitHub](../hello-world/assets/new-repo.gif)
-
-- Add the empty repository you created on GitHub as a _remote_ to your local repo:
-
-  ```sh
-  git remote add origin git@github.com:USERNAME/design-co.git
-  ```
-
-  Conveniently, you can copy this line from GitHub after creating a new repo.
+  Feel free to replace _"DESIGN CO"_ with a more meaningful message.
 
 - Push our local commits to GitHub:
 
@@ -124,11 +100,8 @@ These steps will be followed for almost every assignment going forward. Once you
 - Now that our source code is up on GitHub, let's publish our page to [Surge](https://surge.sh). The command to do this has already been setup for you:
 
   ```sh
-  npm run deploy
+  yarn deploy
   ```
-
-  This first time you do this, you'll be prompted to create an account. By default, surge will assign you a random subdomain name, we'll talk about customizing this another time. For now, set the "website" field of your GitHub repo's info to be that URL:
-    ![Deploying your site](../hello-world/assets/deploy.gif)
 
 - Turn in the URL to your repository on GitHub in newline. It should look like:
 
