@@ -23,34 +23,30 @@ Unfortunately, the Octodex is not responsive*! Today, your task is to recreate t
 
 - **Note**: You should complete at least the tasks given for _explorer_ mode as listed below before turning in the assignment, as well as before attempting _adventure_ or _epic_ modes.
 
-### Setup
+### Explorer Mode
 
-- First, ensure you have the [`app-app` generator](https://github.com/tiy-tpa-fee/generator-app-app) installed. We will have done this in class.
+Recreate the page as closely as you possibly can. Use the same fonts, sizes, and colors. Download some of your favorite Octocat images to use in your page (12-16 or so). Your layout should be flexible, but doesn't need to _perfectly_ responsive. Use flexbox styles to layout the header and the Octocats (hint: checkout the `flex-wrap` property).
+
+## Adventure Mode
+
+If you're feeling adventurous, use CSS _media queries_ to resize the Octocat containers to look great as a single full-width column on small screens, and a nice grid on bigger screens.
+
+## Setup
 
 - Open your Terminal and create and change into the project's directory:
 
   ```sh
-  mkdir -p ~/tiy/week-1/day-3/octodex
-  cd ~/tiy/week-1/day-3/octodex
+  mkdir -p ~/tiy/octodex
+  cd ~/tiy/octodex
   ```
 
 - Run the generator to create a boilerplate project:
 
   ```sh
-  yo app-app alpha
+  app-app --alpha
   ```
 
-  This might take a minute to run, the generator is installing a handy development server and a tool to easily deploy our page to the web.
-
-- Let's create our `git` repository now, and start tracking changes right away:
-
-  ```sh
-  git init
-  git add .
-  git commit -m "Hello, App App"
-  ```
-
-  You can change the commit message to be anything you want.
+  Answer "Yes" to the questions about GitHub and Yarn.
 
 - Open the project folder in Atom:
 
@@ -62,22 +58,14 @@ Unfortunately, the Octodex is not responsive*! Today, your task is to recreate t
 - Tab back to your Terminal and start the development server:
 
   ```sh
-  npm start
+  yarn start
   ```
 
   This should automatically happen, but if it doesn't; navigate to [http://localhost:3000](http://localhost:3000) in your browser. As you make changes to your code, the development server will automatically refresh this page in real-time.
 
-  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `npm start`.
+  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `yarn start`.
 
-- Using the file browser in your editor, open the files `public/index.html` and `public/screen.css` and mark up and style your document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
-
-### Explorer Mode
-
-Recreate the page as closely as you possibly can. Use the same fonts, sizes, and colors. Download some of your favorite Octocat images to use in your page (12-16 or so). Your layout should be flexible, but doesn't need to _perfectly_ responsive. Use flexbox styles to layout the header and the Octocats (hint: checkout the `flex-wrap` property).
-
-## Adventure Mode
-
-If you're feeling adventurous, use CSS _media queries_ to resize the Octocat containers to look great as a single full-width column on small screens, and a nice grid on bigger screens.
+- Using the file browser in your editor, open the file `public/index.html` and format your work with HTML tags and place them into the document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
 
 ## Turning In
 
@@ -87,22 +75,10 @@ These steps will be followed for almost every assignment going forward. Once you
 
   ```sh
   git add .
-  git commit -m "Octodex"
+  git commit -m "I did things"
   ```
 
-  Feel free to replace _"Octodex"_ with a more meaningful message.
-
-- In your browser, go to [GitHub](http://github.com) and create a new repository, I suggest using the title of the assignment (`octodex`) for your repository name.
-
-  ![Creating a new repository on GitHub](https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/hello-world/hello-world/assets/new-repo.gif)
-
-- Add the empty repository you created on GitHub as a _remote_ to your local repo:
-
-  ```sh
-  git remote add origin git@github.com:USERNAME/octodex.git
-  ```
-
-  Conveniently, you can copy this line from GitHub after creating a new repo.
+  Replace _"I did thing"_ with a more meaningful message.
 
 - Push our local commits to GitHub:
 
@@ -115,15 +91,12 @@ These steps will be followed for almost every assignment going forward. Once you
 - Now that our source code is up on GitHub, let's publish our page to [Surge](https://surge.sh). The command to do this has already been setup for you:
 
   ```sh
-  npm run deploy
+  yarn deploy
   ```
-
-  This first time you do this, you'll be prompted to create an account. By default, surge will assign you a random subdomain name, we'll talk about customizing this another time. For now, set the "website" field of your GitHub repo's info to be that URL:
-    ![Deploying your site](https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/hello-world/assets/deploy.gif)
 
 - Turn in the URL to your repository on GitHub in newline. It should look like:
 
-  > `https://github.com/USERNAME/octodex`
+  > `https://github.com/USERNAME/PROJECT`
 
 ## Additional Resources
 

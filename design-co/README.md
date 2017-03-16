@@ -21,13 +21,32 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
 [Download designco-assets.zip](https://tiy-learn-content.s3.amazonaws.com/11210a3e-designco-assets.zip)
 
-### Setup
+### Explorer Mode
+
+* Use a list of links to create a horizontal top navigation bar
+* Use `flexbox` techniques to craft the image grid as well as the columns in the footer to divide the content areas
+* Valid, neat, and organized HTML
+* Valid, neat, and organized CSS
+
+### Adventurer Mode
+
+* Make the top navigation bar links highlight the background color from top to bottom when hovered
+* Give the images to indication that you're hovering your cursor over them
+* Combine the second, third, and fourth columns to use a single block of wrapping text. Making it thrice as wide as the first column. _hint:_ `flex-grow`
+
+### Epic Mode
+
+* Position the navigation bar to always be fixed on top of the screen
+* Refine the layout so it works better on mobile phones using media queries
+* Make the layout fluid using relative sizing so it can fit on a mobile phone
+
+## Setup
 
 - Open your Terminal and create and change into the project's directory:
 
   ```sh
-  mkdir -p ~/tiy/week-1/day-2/design-co
-  cd ~/tiy/week-1/day-2/design-co
+  mkdir -p ~/tiy/design-co
+  cd ~/tiy/design-co
   ```
 
 - Run the generator to create a boilerplate project:
@@ -55,26 +74,7 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
   While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `yarn start`.
 
-- Using the file browser in your editor, open the file `public/index.html` and format your essay with HTML tags and place them into the document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
-
-### Explorer Mode
-
-* Use a list of links to create a horizontal top navigation bar
-* Use `flexbox` techniques to craft the image grid as well as the columns in the footer to divide the content areas
-* Valid, neat, and organized HTML
-* Valid, neat, and organized CSS
-
-### Adventurer Mode
-
-* Make the top navigation bar links highlight the background color from top to bottom when hovered
-* Give the images to indication that you're hovering your cursor over them
-* Combine the second, third, and fourth columns to use a single block of wrapping text. Making it thrice as wide as the first column. _hint:_ `flex-grow`
-
-### Epic Mode
-
-* Position the navigation bar to always be fixed on top of the screen
-* Refine the layout so it works better on mobile phones using media queries
-* Make the layout fluid using relative sizing so it can fit on a mobile phone
+- Using the file browser in your editor, open the file `public/index.html` and format your work with HTML tags and place them into the document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
 
 ## Turning In
 
@@ -84,10 +84,10 @@ These steps will be followed for almost every assignment going forward. Once you
 
   ```sh
   git add .
-  git commit -m "DESIGN CO"
+  git commit -m "I did things"
   ```
 
-  Feel free to replace _"DESIGN CO"_ with a more meaningful message.
+  Replace _"I did thing"_ with a more meaningful message.
 
 - Push our local commits to GitHub:
 
@@ -105,7 +105,7 @@ These steps will be followed for almost every assignment going forward. Once you
 
 - Turn in the URL to your repository on GitHub in newline. It should look like:
 
-  > `https://github.com/USERNAME/design-co`
+  > `https://github.com/USERNAME/PROJECT`
 
 ## Additional Resources
 
